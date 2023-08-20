@@ -30,7 +30,8 @@ export const apiSlice = createApi({
                 url: `/todos/${id}`,
                 method: 'DELETE',
                 body: id
-            })
+            }),
+            invalidatesTags: ['Todos']
         })
     })
 })
